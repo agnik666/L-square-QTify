@@ -12,9 +12,18 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   background-color: var(--color-black);
   font-family: "Poppins", sans-serif;
   color: var(--color-white);
-  overflow: hidden;
+  overflow-x: hidden;
 }
