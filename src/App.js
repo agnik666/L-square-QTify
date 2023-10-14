@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { fetchTopAlbums } from "./api/api";
-import Card from "./components/Card/Card";
+import Section from "./components/Section/Section";
 
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]);
@@ -21,15 +21,8 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <div
-        style={{
-          display: "flex",
-          gap: "1rem",
-        }}
-      >
-        {topAlbumsData.map((card) => {
-          return <Card data={card} type="album" />;
-        })}
+      <div>
+        <Section data={topAlbumsData} type="album" title="Top Albums" />
       </div>
     </div>
   );
