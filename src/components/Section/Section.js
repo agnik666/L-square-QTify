@@ -15,26 +15,25 @@ function Section({ title, data, type }) {
       <div className={styles.header}>
         <h3>{title}</h3>
         <h4 className={styles.toggleDisplay} onClick={handleToggle}>
-          {!carouselToggle ? "Show All" : "Collapse All"}
+          {!carouselToggle ? "Collapse All" : "Show All"}
         </h4>
       </div>
       {data.length === 0 ? (
         <CircularProgress />
       ) : (
         <div className={styles.cardsWrapper}>
-          {carouselToggle && (
+          {!carouselToggle ? (
             <div className={styles.wrapper}>
               {data.map((item) => (
                 <Card data={item} type={type} />
               ))}
             </div>
-          )}
-          {/**
+          ) : (
             <Carousel
               data={data}
               renderComponent={(data) => <Card data={data} type={type} />}
             />
-          **/}
+          )}
         </div>
       )}
     </>

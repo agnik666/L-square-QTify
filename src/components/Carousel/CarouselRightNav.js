@@ -11,7 +11,7 @@ function CarouselRightNav() {
     swiper.on("slideChange", () => {
       setIsEnd(swiper.isEnd);
     });
-  }, [isEnd]);
+  }, [isEnd, swiper, swiper.isEnd]);
   return (
     <div className={styles.rightNavigation}>
       {!isEnd && <RightArrow onClick={() => swiper.slideNext()} />}

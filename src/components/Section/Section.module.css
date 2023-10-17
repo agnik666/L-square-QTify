@@ -2,14 +2,14 @@
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 10px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 25px;
+    padding: 10px;
 }
 
 .toggleDisplay {
