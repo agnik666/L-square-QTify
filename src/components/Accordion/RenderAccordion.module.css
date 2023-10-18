@@ -1,0 +1,17 @@
+.accordionSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+}

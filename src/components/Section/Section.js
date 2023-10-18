@@ -19,7 +19,9 @@ function Section({ title, data, type }) {
         </h4>
       </div>
       {data.length === 0 ? (
-        <CircularProgress />
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <CircularProgress />
+        </div>
       ) : (
         <div className={styles.cardsWrapper}>
           {!carouselToggle ? (

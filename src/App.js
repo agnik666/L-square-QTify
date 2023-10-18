@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import { fetchTopAlbums, fetchNewAlbums, fetchSongsData } from "./api/api";
 import Section from "./components/Section/Section";
 import SongsSection from "./components/Section/SongsSection";
+import RenderAccordion from "./components/Accordion/RenderAccordion";
 
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]);
@@ -41,6 +42,7 @@ function App() {
         <Section data={newAlbumsData} type="album" title="New Albums" />
         <SongsSection data={songsData} type="songs" title="Songs" />
       </div>
+      <RenderAccordion />
     </div>
   );
 }
