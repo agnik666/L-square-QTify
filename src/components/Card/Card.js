@@ -35,18 +35,16 @@ function Card({ data, type }) {
         return (
           <>
             <div className={styles.wrapper}>
-              <Tooltip title={`${likes} songs`} placement="top" arrow>
-                <div className={styles.card}>
-                  <img src={image} alt="songs" />
-                  <div className={styles.banner}>
-                    <Chip
-                      label={`${likes} Likes`}
-                      size="small"
-                      className={styles.chip}
-                    ></Chip>
-                  </div>
+              <div className={styles.card}>
+                <img src={image} alt="songs" />
+                <div className={styles.banner}>
+                  <Chip
+                    label={`${likes} Likes`}
+                    size="small"
+                    className={styles.chip}
+                  ></Chip>
                 </div>
-              </Tooltip>
+              </div>
               <div className={styles.titleWrapper}>
                 <p>{title}</p>
               </div>

@@ -10,7 +10,7 @@ function FilterTabs({ songsData, handleSongDataChange }) {
 
   const handleChange = (_, selected) => {
     setSelectedGenre(selected);
-    console.log(selected);
+    // console.log(selected);
   };
 
   const filterSongsData = () => {
